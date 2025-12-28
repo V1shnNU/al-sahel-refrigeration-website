@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al Sahel Refrigeration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg"></div>
+
+  <!-- Header -->
+  <header class="glass header">
+    <h1>Al Sahel Refrigeration</h1>
+    <button onclick="openLogin()">Login</button>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="glass hero">
+    <h2>AC Repair & Refrigeration Services</h2>
+    <p>Installation • Service • Used AC • Spare Parts</p>
+    <button>Book Service</button>
+  </main>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="glass modal-box">
+      <h3>Login</h3>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="fakeLogin()">Login</button>
+      <p onclick="switchToSignup()">Create new account</p>
+      <span class="close" onclick="closeLogin()">×</span>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="glass modal-box">
+      <h3>Sign Up</h3>
+      <input type="text" placeholder="Phone Number" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="fakeSignup()">Sign Up</button>
+      <p onclick="switchToLogin()">Already have an account?</p>
+      <span class="close" onclick="closeSignup()">×</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
