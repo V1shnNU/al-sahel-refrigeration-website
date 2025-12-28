@@ -2,53 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Al Sahel Refrigeration</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background -->
-  <div class="bg"></div>
-
-  <!-- Header -->
-  <header class="glass header">
-    <h1>Al Sahel Refrigeration</h1>
-    <button onclick="openLogin()">Login</button>
+  <!-- NAVBAR -->
+  <header class="navbar glass">
+    <div class="logo">Al Sahel Refrigeration</div>
+    <nav class="nav-actions">
+      <a href="#" id="loginBtn">Login</a>
+      <a href="#" class="btn secondary" id="signupBtn">Sign Up</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <main class="glass hero">
-    <h2>AC Repair & Refrigeration Services</h2>
-    <p>Installation • Service • Used AC • Spare Parts</p>
-    <button>Book Service</button>
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <div class="hero-content glass">
+      <h1>AC Repair & Refrigeration Services</h1>
+      <p>
+        Installation • Service • Used AC • Spare Parts
+      </p>
+      <div class="hero-buttons">
+        <button class="btn primary" id="bookServiceBtn">Book Service</button>
+        <button class="btn secondary" id="callNowBtn">Call Now</button>
+      </div>
+    </div>
   </main>
 
-  <!-- Login Modal -->
-  <div class="modal" id="loginModal">
-    <div class="glass modal-box">
-      <h3>Login</h3>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button onclick="fakeLogin()">Login</button>
-      <p onclick="switchToSignup()">Create new account</p>
-      <span class="close" onclick="closeLogin()">×</span>
-    </div>
-  </div>
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h2>Our Services</h2>
 
-  <!-- Signup Modal -->
-  <div class="modal" id="signupModal">
-    <div class="glass modal-box">
-      <h3>Sign Up</h3>
-      <input type="text" placeholder="Phone Number" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button onclick="fakeSignup()">Sign Up</button>
-      <p onclick="switchToLogin()">Already have an account?</p>
-      <span class="close" onclick="closeSignup()">×</span>
-    </div>
-  </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>AC Repair</h3>
+        <p>Quick and reliable repair for all AC brands.</p>
+      </div>
 
+      <div class="service-card">
+        <h3>AC Installation</h3>
+        <p>Professional installation for homes and offices.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Used AC</h3>
+        <p>Quality-checked second-hand air conditioners.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Spare Parts</h3>
+        <p>Genuine AC spare parts and accessories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

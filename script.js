@@ -1,35 +1,19 @@
-function openLogin() {
-  document.getElementById("loginModal").style.display = "flex";
-}
+// Basic button interactions (frontend only)
 
-function closeLogin() {
-  document.getElementById("loginModal").style.display = "none";
-}
+document.getElementById("loginBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("Login page will be added next");
+});
 
-function openSignup() {
-  document.getElementById("signupModal").style.display = "flex";
-}
+document.getElementById("signupBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  alert("Sign Up page will be added next");
+});
 
-function closeSignup() {
-  document.getElementById("signupModal").style.display = "none";
-}
+document.getElementById("bookServiceBtn").addEventListener("click", function () {
+  alert("Service booking flow coming soon");
+});
 
-function switchToSignup() {
-  closeLogin();
-  openSignup();
-}
-
-function switchToLogin() {
-  closeSignup();
-  openLogin();
-}
-
-function fakeLogin() {
-  alert("Login successful (frontend only)");
-  closeLogin();
-}
-
-function fakeSignup() {
-  alert("Signup successful (frontend only)");
-  closeSignup();
-}
+document.getElementById("callNowBtn").addEventListener("click", function () {
+  window.location.href = "tel:+971000000000"; // replace with real number later
+});
